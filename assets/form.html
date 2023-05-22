@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario bootstrap</title>
+  <link rel="stylesheet" href="./css/form.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Open+Sans:wght@300&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="./js/form.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+
+      <div class="col-12 text-center">
+        <h1 id="title">Cadastro escolinha do seu ronildo</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="form-tagline" class="col-md-5">
+        <div class="form-tagline container">
+          <img src="/assets/img/mestre.jpg" width="auto" height="500px"></img>
+          <h2>10 reais faz o pix </h2>
+        </div>
+      </div>
+
+      <div id="form-content" class="col-md-7">
+        <form id="survey-form" onsubmit="return false;">
+
+          <div class="row form-group mb-2">
+            <label id="name-label" class="control-label" for="nome">*Nome:</label>
+            <input id="nome" type="text" class="form-control" placeholder="Nome do curumin" name="name" required>
+          </div>
+
+          <div class="form-group row mb-2">
+            <label id="number-label" class="control-label" for="email">*Telefone:</label>
+            <input type="number" class="form-control" id="number" placeholder="Telefone do curumin" name="number"
+              min="1" max="125" required>
+          </div>
+
+          <div class="form-group row mb-2">
+            <label id="email-label" class="control-label" for="email">*Data de nascimento:</label>
+              <div class="row">
+                <input id="startDate" class="form-control" type="date" />
+            </div>
+          </div>
+
+          <div class="form-group row mb-2">
+            <label id="email-label" class="control-label" for="email">*Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Email do meliante" name="email"
+              pattern="^[-+.\w]{1,64}@[-.\w]{1,64}\.[-.\w]{2,6}$" required>
+          </div>
+
+          <div class="form-group row mb-3">
+            <label class="control-label">Posição:</label>
+            <select class="form-control" id="dropdown">
+              <option>Atacante</option>
+              <option>Meio de campo</option>
+              <option>Volante</option>
+              <option>Zagueiro</option>
+              <option>Lateral</option>
+              <option>Meio Atacante</option>
+              <option>Esquenta banco</option>
+            </select>
+          </div>
+
+          <div class="form-group row">
+            <label class="control-label">Nivel de jogabilidade:</label>
+
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="melhor-fase" id="melhor-fase" value="melhor-fase">
+              <label class="form-check-label" for="melhor-fase">Arthur melhor fase</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="execelente" id="execelente" value="execelente">
+              <label class="form-check-label" for="execelente">Excelente</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="bom" id="bom" value="bom">
+              <label class="form-check-label" for="bom">Bom</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="media" name="media" value="media">
+              <label class="form-check-label" for="media">Na Média</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="ruim" name="ruim" value="ruim">
+              <label class="form-check-label" for="ruim">Ruim</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="horripilante" name="horripilante" value="horripilante">
+              <label class="form-check-label" for="horripilante">Horripilante</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="aposentado" name="aposentado" value="aposentado">
+              <label class="form-check-label" for="aposentado">Aposentado</label>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="form-group row">
+            <label class="control-label" for="observacao">Observação:</label>
+            <div class="input-group col-sm-9">
+              <textarea class="form-control" rows="4" id="observacao"></textarea>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <div class="col-sm-12 submit-button">
+              <button type="submit" id="submit" class="btn btn-default" aria-pressed="true">Salvar</button>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+  </footer>
+</body>
+
+</html>

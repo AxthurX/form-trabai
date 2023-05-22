@@ -1,0 +1,57 @@
+body {
+  font-family: 'Nunito', sans-serif;
+  color: #384047;
+}
+
+input
+textarea,
+select {
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  background: rgba(255,255,255,0.1);
+  background-color: #e8eeef;
+  margin-bottom: 30px;
+  font-size: 16px;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  color: #8a97a0;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+#form-tagline {
+  background: #2c40f5;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  color: #ffffff;
+  margin-top: 3%;
+  padding: 2%;
+}
+
+#form-content {
+  background: #f4f7f8;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  margin-top: 3%;
+  padding: 3%;
+}
+
+div .submit-button {
+  margin-top: 3%;
+  text-align: right;
+}
+
+button#submit {
+  background: #2c40f5;
+  color: #ffffff;
+  white-space: normal;
+  width: auto;
+  font-weight: 600;
+  width: 25%;
+}
